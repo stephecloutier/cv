@@ -1,0 +1,14 @@
+main figure {
+  margin: 0 1.7777777778%;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+main figure img {
+    border-radius: 0.5em;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

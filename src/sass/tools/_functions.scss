@@ -1,0 +1,10 @@
+@function border_color($color) {
+    @return desaturate(darken($color, 25%), 50%);
+};
+
+
+@mixin colored_box($color) {
+    @extend .box;
+    background-color: $color;
+    border-color: border_color($color);
+}

@@ -1,0 +1,66 @@
+section.partager {
+    margin: 3.5em 0 2em 1.7777777778%;
+}
+
+section.partager ul {
+    float: left;
+}
+section.partager h3 {
+    color: #616161;
+    font-size: 1em;
+}
+
+section.partager ul {
+    margin-top: 0.3em;
+    line-height: 0;
+    display: inline-block;
+}
+
+section.partager ul li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+section.partager ul li a {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+section.partager ul li:first-child a {
+    background: transparent url("../images/reseauxSociaux/facebook.svg") no-repeat;
+}
+
+section.partager ul li:nth-child(2) a {
+    background: transparent url("../images/reseauxSociaux/twitter.svg") no-repeat;
+}
+
+section.partager ul li:nth-child(3) a {
+    background: transparent url("../images/reseauxSociaux/linkedin.svg") no-repeat;
+}
+
+section.partager ul li a:hover {
+    opacity: 0.8;
+}
+
+section.partager a.pluscv {
+    float: right;
+    background-color: #ee6b2f;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 1.777777777778%;
+    text-decoration: none;
+    color: white;
+}
+
+section.partager a.pluscv:hover {
+    background-color: #da471b;
+}
+section.partager a.pluscv::after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,46 @@
+div.formExp {
+    overflow: hidden;
+}
+
+section.formations, section.experiences {
+    margin-top: 2em;
+}
+
+section.formations h3, section.experiences h3 {
+    font-size: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+
+.formations li, .experiences li {
+    display: inline-block;
+    text-align: center;
+    min-width: 45%;
+    padding: 0.4em 0;
+    border-radius: 0.3em;
+    color: white;
+}
+
+.formations li span, .experiences li span {
+    padding-top: 0.5em;
+    display: block;
+    font-size: 0.7em;
+}
+
+.formations li:last-child {
+    background-color: #a4acaf;
+}
+
+.experiences li:last-child {
+    background-color: #9eb7b8;
+}
+
+.formations li:first-child {
+    background-color: #b97fc9;
+    margin-right: 0.5em;
+}
+
+.experiences li:first-child {
+    background-color: #fdb9e9;
+    margin-right: 0.5em;
+}

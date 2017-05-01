@@ -1,0 +1,284 @@
+@media screen and (min-width: 1280px) {
+    body {
+      width: 100%;
+    }
+
+    main {
+      width: 1280px;
+    }
+
+    section[id="CV"] {
+      max-width: 900px;
+    }
+
+    section.stats ul li.titre-stat {
+        font-size: 0.8em;
+    }
+
+    footer div.footerWrap {
+        width: 900px;
+    }
+
+    .footerWrap div {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+      width: 100%;
+    }
+
+    section[id="CV"] {
+      max-width: 900px;
+    }
+
+    footer div.footerWrap {
+        width: 900px;
+    }
+
+    .footerWrap div {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /*****Navigation principale*****/
+
+    nav#navprin {
+        box-sizing: border-box;
+    }
+
+    nav#navprin>ul {
+      width: 100%; /*892px*/
+      background-color: #222222;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      box-sizing: border-box;
+
+    }
+
+    nav#navprin li {
+        box-sizing: border-box;
+        width: 13.9047619051% ;
+    }
+
+    nav#navprin li+li {
+      margin-left: 0.4444444444%;
+    }
+
+    nav#navprin li a {
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 1.47em;
+    }
+
+
+    /*** footer ***/
+
+    /*footer div.footerWrap {
+        width: 100%;
+    }
+
+    .footerWrap div {
+        width: 33.333333%;
+    }*/
+
+}
+
+@media screen and (max-width: 720px) {
+
+    /*** Navigation principale ***/
+
+    #navprin {
+        box-sizing: border-box;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #navprin ul {
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navprin ul li {
+        margin: 0;
+        border-bottom: 1px solid black;
+    }
+
+    #navprin ul li:last-child {
+        border: none;
+    }
+
+    #navprin ul li a {
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        min-height: 55px;
+        padding: 0;
+        font-size: 1.1em;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+
+    #navprin ul li a svg {
+        margin: 0;
+    }
+
+    #navprin ul li a span {
+        margin: 0 1.5em;
+        align-self: center;
+    }
+
+
+    #navprin.menuHidden {
+        display: none;
+    }
+
+    .mobile.hidden {
+        height: 60px;
+        background-color: #1e1e1e;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile.hidden svg {
+        padding: 1em;
+        background-color: #313131;
+        border-right: 2px solid black;
+        fill: white;
+    }
+
+    .mobile.hidden.toggle svg {
+        fill: #313131;
+        background-color: black;
+    }
+
+    #menuIcon {
+        cursor: pointer;
+    }
+
+    /*** Contenu ***/
+
+    nav#navetud a {
+        font-size: 1.2em;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #CV {
+        padding: 0 1em;
+    }
+
+    main figure {
+        float: none;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main figure img {
+        width: 100%;
+    }
+
+    main figure .raccourcis-favoris {
+        align-self: bottom;
+        top: -38px;
+    }
+
+    section.stats {
+        float: none;
+        width: 100%;
+        padding: 1em 1.5em;
+    }
+
+    section.stats h3 {
+        align-self: left;
+    }
+
+    section.stats>ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section.contact {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    div.formExp {
+        width: 100%;
+    }
+
+    section.partager {
+        width: 100%
+    }
+
+    footer .footerWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footerWrap div {
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 2em 0;
+        width: 100%;
+    }
+
+    footer .footerWrap div:first-child {
+        padding-top: 0;
+    }
+
+    footer .footerWrap div:last-child {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    nav#navetud a {
+        font-size: 0;
+        padding-top: 20px;
+    }
+
+    div.nom-wrap {
+        width: 55%;
+    }
+
+
+    section#CV {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    h2.nomÉtudiant {
+        hyphens: none;
+    }
+}

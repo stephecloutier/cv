@@ -1,0 +1,63 @@
+nav[id="navetud"] {
+  background-color: white;
+  text-align: center;
+  min-height: 118px;
+  overflow: hidden;
+}
+
+nav[id="navetud"] a {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 1em 0;
+    background-color: #a4a4a4;
+    min-height: 118px;
+    font-size: 1.5em;
+    color : white;
+    vertical-align: middle;
+    transition: 0.3s ease 0s;
+}
+
+nav[id="navetud"] a:hover {
+    background-color: #30a7d7;
+}
+
+nav[id="navetud"] a.previous {
+  width: 50%;
+  display: block;
+  margin-right: 0.4444444444%;
+  float: left;
+}
+
+nav[id="navetud"] a.next {
+    display: block;
+    overflow: hidden;
+    width: auto;
+}
+
+nav[id="navetud"] a.next::after {
+    content: "";
+    clear: both;
+    display: both;
+}
+
+nav[id="navetud"] a.previous::before {
+    content: url("../images/back.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+
+nav[id="navetud"] a.next::after {
+    content: url("../images/next.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 0.5em;
+}

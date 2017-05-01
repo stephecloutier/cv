@@ -1,0 +1,35 @@
+section.contact {
+    overflow: hidden;
+    background-color: #30a7d7;
+    margin-right: 1em;
+    border-radius: 0.5em;
+    padding: 1.75em 1.7777777778%;
+    font-size: 0.9em;
+}
+
+section.contact div.colonne1 {
+    float: left;
+    margin-right: 3.5555555556%;
+    width: 48.222222222%;
+}
+
+section.contact div.colonne2 {
+    overflow: hidden;
+    width: 48.222222222%;
+}
+
+section.contact div.colonne2::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section.contact h4 {
+    color: white;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+section.contact li:nth-child(even) {
+    margin-top: 1em;
+}

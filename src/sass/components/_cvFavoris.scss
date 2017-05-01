@@ -1,0 +1,46 @@
+div.raccourcis-favoris {
+    margin: 0 auto -40px;
+
+    background-color: white;
+    width: 170px;
+    height: 40px;
+
+    position: relative;
+    top: -40px;
+}
+
+div.raccourcis-favoris ul {
+    text-align: center;
+}
+
+div.raccourcis-favoris ul li {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+div.raccourcis-favoris ul li+li {
+    margin-left: 1em;
+}
+
+div.raccourcis-favoris::before {
+    content: " ";
+    display: inline-block;
+    background: transparent url("../images/notch-white-s.png") no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 75px;
+    left: -60px;
+    top: -1px;
+}
+
+div.raccourcis-favoris::after {
+    content: " ";
+    display: inline-block;
+    background: transparent url("../images/notch-white-s.png") no-repeat;
+    position: absolute;
+    height: 40px;
+    width: 75px;
+    background-position: right top;
+    right: -60px;
+    top: -1px;
+}

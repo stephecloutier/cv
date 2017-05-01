@@ -1,0 +1,102 @@
+nav[id="navprin"] {
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
+  min-height : 101px;
+}
+
+nav[id="navprin"]>ul {
+  margin: 0 auto;
+  width: 892px;
+  background-color: #222222;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+nav[id="navprin"] li {
+  display: inline-block;
+}
+
+nav[id="navprin"] li+li {
+  margin-left: 4px;
+}
+
+nav[id="navprin"] li>a {
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-size: 0.85em;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 124px;/*94*/
+    min-height: 101px;/*30px*/
+    text-align: center;
+    background-color: #313131;
+    word-wrap: normal;
+    vertical-align: baseline;
+    padding-top: 20px;
+    transition: 0.25s ease-in-out;
+}
+
+nav[id="navprin"] li>a svg {
+    display: block;
+    margin: 0 auto 1em;
+    transition: 0.25s ease-in-out;
+}
+
+nav[id="navprin"] li:nth-child(1) a {
+    border-bottom-left-radius: 8px;
+    @include colorNavItem($grey);
+}
+
+nav[id="navprin"] li:nth-child(2) a {
+    @include colorNavItem($red);
+}
+
+nav[id="navprin"] li:nth-child(3) a {
+    @include colorNavItem($orange);
+}
+
+nav[id="navprin"] li:nth-child(4) a {
+    @include colorNavItem($yellow);
+}
+
+nav[id="navprin"] li:nth-child(5) a {
+    @include colorNavItem($skyblue);
+}
+
+nav[id="navprin"] li:nth-child(6) a {
+    @include colorNavItem($blue);
+}
+
+nav[id="navprin"] li:nth-child(7) a {
+    border-bottom-right-radius: 8px;
+    @include colorNavItem($green);
+}
+
+/* survol nav */
+
+nav[id="navprin"] li a:hover svg {
+    fill: white;
+}
+
+nav[id="navprin"] li:nth-child(1) a:hover {
+    background-color: $grey;
+}
+nav[id="navprin"] li:nth-child(2) a:hover {
+    background-color: $red;
+}
+nav[id="navprin"] li:nth-child(3) a:hover {
+    background-color: $orange;
+}
+nav[id="navprin"] li:nth-child(4) a:hover {
+    background-color: $yellow;
+}
+nav[id="navprin"] li:nth-child(5) a:hover {
+    background-color: $skyblue;
+}
+nav[id="navprin"] li:nth-child(6) a:hover {
+    background-color: $blue;
+}
+nav[id="navprin"] li:nth-child(7) a:hover {
+    background-color: $green;
+}
