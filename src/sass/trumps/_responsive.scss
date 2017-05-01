@@ -42,6 +42,74 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main>section>* {
+        float: none;
+        width: 48%;
+        margin: 0 0 2em 0;
+    }
+
+    [id="CV"] {
+        padding: 0 1.5em;
+    }
+
+    section.cv__stats, section.cv__contact {
+        margin: 0 0 2em 0;
+    }
+
+    .cv__nom {
+        order: 1;
+    }
+
+    .cv__figure {
+        order: 2;
+    }
+
+    section.cv__stats {
+        order: 5;
+    }
+
+    section.cv__description {
+        order: 3;
+    }
+
+    section.cv__contact {
+        order: 4;
+        width: 100%;
+        padding: 2em;
+    }
+
+    .cv__formations {
+        order: 6;
+    }
+
+    section.cv__partager {
+        order: 7;
+        width: 100%;
+        margin: 0;
+        a.pluscv {
+            margin: 0;
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
     /*****Navigation principale*****/
 
@@ -74,19 +142,85 @@
     }
 
 
-    /*** footer ***/
+    /*** Contenu ***/
 
-    /*footer div.footerWrap {
+    nav#navetud a {
+        font-size: 1.2em;
+    }
+
+    main figure {
+        float: none;
+        width: 80%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto 2em;
+    }
+
+    main figure img {
         width: 100%;
     }
 
-    .footerWrap div {
-        width: 33.333333%;
-    }*/
+    main figure .raccourcis-favoris {
+        align-self: bottom;
+        top: -38px;
+    }
+
+    section.stats {
+        width: 100%;
+        padding: 1em 1.5em;
+    }
+
+    section.stats h3 {
+        align-self: left;
+    }
+
+    section.stats>ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cv__description {
+        width: 100%;
+    }
+
+    div.formExp {
+        width: 100%;
+    }
+
+    section.formations {
+        margin-top: 0;
+    }
+
+    section.partager {
+        width: 100%
+    }
+
+    footer .footerWrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footerWrap div {
+        border-right: none;
+        border-bottom: 2px solid black;
+        padding: 2em 0;
+        width: 100%;
+    }
+
+    footer .footerWrap div:first-child {
+        padding-top: 0;
+    }
+
+    footer .footerWrap div:last-child {
+        border: none;
+    }
 
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
 
     /*** Navigation principale ***/
 
@@ -166,99 +300,11 @@
     #menuIcon {
         cursor: pointer;
     }
+}
 
-    /*** Contenu ***/
-
-    nav#navetud a {
-        font-size: 1.2em;
-    }
-
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    main>section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #CV {
-        padding: 0 1em;
-    }
-
+@media screen and (max-width: 750px) {
     main figure {
-        float: none;
         width: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main figure img {
-        width: 100%;
-    }
-
-    main figure .raccourcis-favoris {
-        align-self: bottom;
-        top: -38px;
-    }
-
-    section.stats {
-        float: none;
-        width: 100%;
-        padding: 1em 1.5em;
-    }
-
-    section.stats h3 {
-        align-self: left;
-    }
-
-    section.stats>ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    section.contact {
-        float: none;
-        width: 100%;
-        margin: 0;
-    }
-
-    div.formExp {
-        width: 100%;
-    }
-
-    section.partager {
-        width: 100%
-    }
-
-    footer .footerWrap {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .footerWrap div {
-        border-right: none;
-        border-bottom: 2px solid black;
-        padding: 2em 0;
-        width: 100%;
-    }
-
-    footer .footerWrap div:first-child {
-        padding-top: 0;
-    }
-
-    footer .footerWrap div:last-child {
-        border: none;
     }
 }
 
