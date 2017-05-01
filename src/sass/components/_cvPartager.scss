@@ -6,8 +6,9 @@ section.partager ul {
     float: left;
 }
 section.partager h3 {
-    color: #616161;
+    color: $darkGrey;
     font-size: 1em;
+    font-weight: 600;
 }
 
 section.partager ul {
@@ -54,6 +55,8 @@ section.partager a.pluscv {
     margin-right: 1.777777777778%;
     text-decoration: none;
     color: white;
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
 }
 
 section.partager a.pluscv:hover {

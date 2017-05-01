@@ -1,6 +1,7 @@
 footer {
     background-color: #1f1f1f;
     width: 100%;
+    padding: 2em 0;
 }
 
 footer::after {
@@ -10,7 +11,7 @@ footer::after {
 }
 
 footer div.footerWrap {
-    margin: 2em auto;
+    margin: 0 auto;
     width: 88%;
     box-sizing: border-box;
 }
@@ -37,6 +38,7 @@ footer div.liens span {
     font-size: 2em;
     font-family: "Ubuntu", sans-serif;
     color: white;
+    font-weight: 600;
 }
 
 footer div.liens li {
@@ -67,6 +69,7 @@ footer div.follow {
 footer div.follow span {
     color: white;
     font-size: 1.2em;
+    font-weight: 600;
 }
 
 footer div.follow li {

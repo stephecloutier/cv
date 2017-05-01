@@ -1,10 +1,11 @@
 section.contact {
     overflow: hidden;
-    background-color: #30a7d7;
+    background-color: $skyblue;
     margin-right: 1em;
     border-radius: 0.5em;
     padding: 1.75em 1.7777777778%;
     font-size: 0.9em;
+    font-weight: 500;
 }
 
 section.contact div.colonne1 {
@@ -28,6 +29,8 @@ section.contact h4 {
     color: white;
     margin-bottom: 1em;
     font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 section.contact li:nth-child(even) {
