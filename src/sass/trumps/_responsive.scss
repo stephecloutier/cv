@@ -20,7 +20,7 @@
     }
 
     .footerWrap div {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
@@ -34,11 +34,11 @@
     }
 
     footer div.footerWrap {
-        width: 900px;
+        max-width: 900px;
     }
 
     .footerWrap div {
-        width: 300px;
+        max-width: 300px;
     }
 }
 
@@ -198,24 +198,24 @@
         width: 100%
     }
 
-    footer .footerWrap {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .footerWrap div {
-        border-right: none;
-        border-bottom: 2px solid black;
-        padding: 2em 0;
+    footer {
         width: 100%;
     }
 
-    footer .footerWrap div:first-child {
-        padding-top: 0;
-    }
-
-    footer .footerWrap div:last-child {
-        border: none;
+    footer .footerWrap {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        div {
+            padding-left: 2em;
+            float: none;
+            width: 30%;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
     }
 
 }
@@ -305,6 +305,28 @@
 @media screen and (max-width: 750px) {
     main figure {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer .footerWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    footer .footerWrap div {
+        padding: 2em 0;
+        width: 100%;
+    }
+
+    footer .footerWrap div:first-child {
+        padding-top: 0;
+    }
+
+    footer .footerWrap div:last-child {
+        border: none;
     }
 }
 
