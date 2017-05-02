@@ -205,13 +205,15 @@
     footer .footerWrap {
         width: 95%;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
         div {
-            padding-left: 2em;
             float: none;
+            padding: 0 0 2em 0;
             width: 30%;
+            min-width: 190px;
             &:first-child {
                 padding-left: 0;
             }
@@ -308,27 +310,23 @@
     }
 }
 
-@media screen and (max-width: 650px) {
-    footer .footerWrap {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-    }
-
-    footer .footerWrap div {
-        padding: 2em 0;
-        width: 100%;
-    }
-
-    footer .footerWrap div:first-child {
-        padding-top: 0;
-    }
-
-    footer .footerWrap div:last-child {
-        border: none;
-    }
-}
+// @media screen and (max-width: 650px) {
+//     footer .footerWrap {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: flex-start;
+//         width: 100%;
+//     }
+//
+//     footer .footerWrap div {
+//         padding: 2em 0;
+//         width: 100%;
+//     }
+//
+//     footer .footerWrap div:first-child {
+//         padding-top: 0;
+//     }
+// }
 
 @media screen and (max-width: 460px) {
     nav#navetud a {
