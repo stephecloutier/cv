@@ -3,13 +3,13 @@ div.formExp {
 }
 
 section.formations, section.experiences {
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 section.formations h3, section.experiences h3 {
     font-size: 1.25em;
     font-weight: 600;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 
@@ -17,7 +17,7 @@ section.formations h3, section.experiences h3 {
     display: inline-block;
     text-align: center;
     min-width: 45%;
-    padding: 0.4em 0;
+    padding: 0.5em 0;
     border-radius: 0.3em;
     color: white;
     font-weight: 500;
@@ -30,7 +30,7 @@ section.formations h3, section.experiences h3 {
 }
 
 .formations li, .experiences li {
-    background-color: $grey;
+    background-color: $purple;
 }
 
 .formations li:first-child {

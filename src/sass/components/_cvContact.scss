@@ -1,38 +1,54 @@
 section.contact {
     overflow: hidden;
     background-color: $skyblue;
-    margin-right: 1em;
+    //margin-right: 1em;
     border-radius: 0.5em;
-    padding: 1.75em 1.7777777778%;
+    padding: 1.5em 1em 0 1em;
     font-size: 0.9em;
     font-weight: 500;
-}
-
-section.contact div.colonne1 {
-    float: left;
-    margin-right: 3.5555555556%;
-    width: 48.222222222%;
-}
-
-section.contact div.colonne2 {
-    overflow: hidden;
-    width: 48.222222222%;
-}
-
-section.contact div.colonne2::after {
-    content: "";
-    clear: both;
-    display: block;
+    color: white;
+    line-height: 1.5;
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            min-width: 180px;
+            max-width: 45%;
+            margin-bottom: 1.5em;
+            // min-height: 100px;
+        }
+    }
 }
 
 section.contact h4 {
-    color: white;
-    margin-bottom: 1em;
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-section.contact li:nth-child(even) {
-    margin-top: 1em;
-}
+
+
+//
+// section.contact div.colonne1 {
+//     float: left;
+//     margin-right: 3.5555555556%;
+//     width: 48.222222222%;
+// }
+//
+// section.contact div.colonne2 {
+//     overflow: hidden;
+//     width: 48.222222222%;
+// }
+//
+// section.contact div.colonne2::after {
+//     content: "";
+//     clear: both;
+//     display: block;
+// }
+
+//
+// section.contact li:nth-child(even) {
+//     margin-top: 1em;
+// }
