@@ -2,4 +2,3 @@ _old_version
 assets
 node_modules
 yarn.lock
-src/images
