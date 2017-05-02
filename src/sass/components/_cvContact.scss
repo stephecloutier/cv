@@ -13,8 +13,7 @@ section.contact {
         flex-wrap: wrap;
         justify-content: space-between;
         li {
-            min-width: 170px;
-            max-width: 45%;
+            width: 170px;
             margin-bottom: 1.5em;
             // min-height: 100px;
         }
