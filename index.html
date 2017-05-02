@@ -8,7 +8,7 @@
     <meta name="author" content="Stéphanie Cloutier" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/main.css" media="screen" />
-    <link rel="icon" type="image/png" href="./assets/images/pokeball.svg">
+    <link rel="icon" type="image/jpg" href="./assets/images/photocv.jpg">
 
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
@@ -91,14 +91,14 @@
         </div>
       </nav>
 
-      <section title="CV" id="CV">
+      <section title="CV" id="CV" class="vcard" itemscope itemtype="http://schema.org/Person">
 
         <div class="nom-wrap cv__nom"><!--
-        --><h2 class="nomÉtudiant">Stéphanie Cloutier <span>Gr. 2285</span></h2>
+        --><h2 class="nomÉtudiant"><span class="fn"><span itemprop="givenName">Stéphanie</span> <span itemprop="familyName">Cloutier</span></span> <span>Gr. 2285</span></h2>
         </div>
 
         <figure class="cv__figure">
-            <img src="./assets/images/photocv.jpg" alt="Étudiante Stéphanie Cloutier" height="450" width="450"/>
+            <img class="photo" itemprop="image" src="./assets/images/photocv.jpg" alt="Étudiante Stéphanie Cloutier" height="450" width="450"/>
             <div class="raccourcis-favoris">
                 <ul>
                   <li class="fav1"><a href="#" title="Ajouter à ma collection">
@@ -213,7 +213,7 @@
 
         <section title="description" class="description cv__description">
           <h3 class="hidden">Description</h3>
-          <p class="texte-description">
+          <p class="texte-description" itemprop="description">
             Organisée, motivée et passionnée par ce que je fais, ce qui me tient le plus à c&oelig;ur est de faire mon propre chemin et de réaliser mes propres expériences. Jeune Québécoise, j'étudie présentement à Liège en développement web pour ajouter des cordes à mon arc.
           </p>
 
@@ -230,10 +230,10 @@
           <h3 class="hidden">Contact</h3>
           <div class="list-wrapper">
               <ul>
-                  <li><h4>Email</h4> <span class="email">stephecloutier@gmail.com</span></li>
-                  <li><h4>Téléphone</h4> 0487 20 43 73</li>
-                  <li><h4>Adresse</h4> 20 rue Julien Lahaut, 4000 Liège, Belgique</li>
-                  <li><h4>Site Web</h4> <a href="http://www.stephecloutier.wordpress.com">www.stephecloutier.com</a></li>
+                  <li><h4>Email</h4> <span class="email" itemprop="email">stephecloutier@gmail.com</span></li>
+                  <li><h4>Téléphone</h4> <span itemprop="telephone" class="tel">0487 20 43 73</span></li>
+                  <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="adr"><h4>Adresse</h4> <span itemprop="streetAddress" class="street-address">20 rue Julien Lahaut</span>, <span itemprop="postalCode" class="region">4000</span> <span itemprop="addressRegion" class="locality">Liège</span>, <span itemprop="addressCountry">Belgique</span></li>
+                  <li><h4>Site Web</h4> <a itemprop="url" class="url" href="http://www.stephecloutier.wordpress.com">www.stephecloutier.com</a></li>
               </ul>
           </div>
 

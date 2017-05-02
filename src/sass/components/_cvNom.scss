@@ -44,6 +44,6 @@ div.nom-wrap h2::before {
 }
 
 
-div.nom-wrap .nomÉtudiant span {
+div.nom-wrap .nomÉtudiant span:last-child {
   color: $grey;
 }
