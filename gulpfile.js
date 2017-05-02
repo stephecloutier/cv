@@ -103,5 +103,5 @@ gulp.task("sync", ['css'], function() {
 
 // --- Aliases
 
-    gulp.task("default", ["sync", "css", "js"]);
+    gulp.task("default", ["images", "sync", "css", "js"]);
     gulp.task("work", ["default", "watch"]);
