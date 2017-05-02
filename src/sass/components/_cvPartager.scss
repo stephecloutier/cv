@@ -48,7 +48,7 @@ section.partager ul li a:hover {
 
 section.partager a.pluscv {
     float: right;
-    background-color: #ee6b2f;
+    background-color: $orange;
     padding: 1em;
     border-radius: 0.5em;
     overflow: hidden;
@@ -61,7 +61,7 @@ section.partager a.pluscv {
 }
 
 section.partager a.pluscv:hover {
-    background-color: #da471b;
+    background-color: $red;
 }
 section.partager a.pluscv::after {
     content: "";

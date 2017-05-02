@@ -5,7 +5,7 @@ section.stats {
     border-radius: 0.5em;
     width: 50%;
     float: left;
-    background-color: #a4a4a4;
+    background-color: $lightGrey;
     overflow: hidden;
 }
 
@@ -44,25 +44,25 @@ section.stats ul li.hidden:last-child {
 /* variations stats */
 
 section.stats ul li.titre-stat:nth-child(1) li.hidden:nth-child(n+3){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }
 
 section.stats ul li.titre-stat:nth-child(2) li.hidden:nth-child(n+8){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }
 
 section.stats ul li.titre-stat:nth-child(3) li.hidden:nth-child(n+9){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }
 
 section.stats ul li.titre-stat:nth-child(4) li.hidden:nth-child(n+4){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }
 
 section.stats ul li.titre-stat:nth-child(5) li.hidden:nth-child(n+3){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }
 
 section.stats ul li.titre-stat:nth-child(6) li.hidden:nth-child(n+2){
-    background-color: #30a7d7;
+    background-color: $skyblue;
 }

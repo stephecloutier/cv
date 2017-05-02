@@ -10,10 +10,10 @@ nav[id="navetud"] a {
     box-sizing: border-box;
     text-decoration: none;
     padding: 1em 0;
-    background-color: #a4a4a4;
+    background-color: $lightGrey;
     min-height: 118px;
     font-size: 1.5em;
-    color : white;
+    color : $darkGrey;
     vertical-align: middle;
     transition: 0.3s ease 0s;
 }
@@ -46,10 +46,11 @@ nav[id="navetud"] a.previous::before {
     display: inline-block;
     width: 22px;
     height: 22px;
-    padding: 3px;
+    padding: 0.2em;
     background-color: white;
     border-radius: 100%;
     margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 nav[id="navetud"] a.next::after {
@@ -57,8 +58,9 @@ nav[id="navetud"] a.next::after {
     display: inline-block;
     width: 22px;
     height: 22px;
-    padding: 3px;
+    padding: 0.2em;
     background-color: white;
     border-radius: 100%;
     margin-left: 0.5em;
+    vertical-align: middle;
 }
