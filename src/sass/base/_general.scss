@@ -7,6 +7,10 @@ span.hidden {
     display: inline-block;
 }
 
+.raccourcis-favoris span.hidden {
+    font-size: 0;
+}
+
 .mobile.hidden {
     display: none;
 }
