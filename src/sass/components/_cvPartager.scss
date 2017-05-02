@@ -1,5 +1,5 @@
 section.partager {
-    margin: 5.5em 0 2em 0;
+    margin: 3em 0 2em 0;
 }
 
 section.partager ul {
@@ -13,7 +13,7 @@ section.partager h3 {
 }
 
 section.partager ul {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
     line-height: 0;
     display: inline-block;
 }
@@ -28,22 +28,12 @@ section.partager ul li a {
     width: 30px;
     height: 30px;
     display: inline-block;
-}
-
-section.partager ul li:first-child a {
-    background: transparent url("../images/reseauxSociaux/facebook.svg") no-repeat;
-}
-
-section.partager ul li:nth-child(2) a {
-    background: transparent url("../images/reseauxSociaux/twitter.svg") no-repeat;
-}
-
-section.partager ul li:nth-child(3) a {
-    background: transparent url("../images/reseauxSociaux/linkedin.svg") no-repeat;
+    fill: $blue;
+    transition: 0.25s ease-in-out;
 }
 
 section.partager ul li a:hover {
-    opacity: 0.8;
+    fill: $darkGrey;
 }
 
 section.partager a.pluscv {

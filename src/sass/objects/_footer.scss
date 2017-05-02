@@ -1,7 +1,7 @@
 footer {
     background-color: $darkGrey;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 1.5em;
     padding-bottom: 2em;
 }
 
@@ -13,7 +13,7 @@ footer::after {
 
 footer div.footerWrap {
     margin: 0 auto;
-    width: 88%;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -23,18 +23,18 @@ footer div.footerWrap {
     width: 33%;
     color: $grey;
     font: 0.8em Helvetica, "Arial", sans-serif;
-    padding-left: 5%;
+    span {
+        font-size: 1.6em;
+        font-family: "Ubuntu", sans-serif;
+        color: white;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 }
 
 footer div.liens {
     float: left;
-}
-
-footer div.liens span {
-    font-size: 2em;
-    font-family: "Ubuntu", sans-serif;
-    color: white;
-    font-weight: 600;
 }
 
 footer div.liens li, .conditions a {
@@ -51,12 +51,6 @@ footer div.follow {
     float: left;
 }
 
-footer div.follow span {
-    color: white;
-    font-size: 1.2em;
-    font-weight: 600;
-}
-
 footer div.follow li {
     display: inline-block;
     margin-right: 0.5em;
@@ -67,33 +61,16 @@ footer div.follow li a {
     width: 30px;
     height: 30px;
     display: inline-block;
+    fill: $grey;
+    transition: 0.25s ease-in-out;
 }
 
 footer div.follow li a:hover {
-    opacity: 0.8;
+    fill: $lightGrey;
 }
-
-footer div.follow li:first-child a {
-    background: white url("../images/reseauxSociaux/facebook.svg") no-repeat;
-    border-radius: 5px;
-}
-
-footer div.follow li:nth-child(2) a {
-    background: transparent url("../images/reseauxSociaux/twitter.svg") no-repeat;
-}
-
-footer div.follow li:nth-child(3) a {
-    background: white url("../images/reseauxSociaux/linkedin.svg") no-repeat;
-    border-radius: 5px;
-}
-
 
 footer div.conditions li {
     margin-bottom: 0.4em;
-}
-
-.conditions ul {
-    margin: 0;
 }
 
 footer div.conditions small {
