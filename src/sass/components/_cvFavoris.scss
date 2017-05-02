@@ -16,6 +16,11 @@ div.raccourcis-favoris ul {
 div.raccourcis-favoris ul li {
     display: inline-block;
     margin-top: 1em;
+    fill: $grey;
+    transition: 0.25s ease-in-out;
+    &:hover {
+        fill: $darkGrey;
+    }
 }
 
 div.raccourcis-favoris ul li+li {
