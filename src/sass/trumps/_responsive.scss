@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
     body {
         display: flex;
         flex-direction: column;
@@ -58,6 +58,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
 
     main>section>* {
@@ -108,10 +109,6 @@
             margin: 0;
         }
     }
-}
-
-@media screen and (max-width: 900px) {
-    /*****Navigation principale*****/
 
     nav#navprin {
         box-sizing: border-box;
@@ -224,6 +221,18 @@
         }
     }
 
+    section.contact {
+        ul {
+            justify-content: space-around;
+            li {
+                min-width: 45%;
+                max-width: 45%;
+                margin-bottom: 1.5em;
+                // min-height: 100px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -322,6 +331,12 @@
 }
 
 @media screen and (max-width: 460px) {
+
+    section.contact {
+        ul {
+            justify-content: space-between;
+        }
+    }
     section[id="CV"] {
         padding: 0 0.5em 1em 0.5em
     }

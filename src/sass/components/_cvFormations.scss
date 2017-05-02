@@ -2,14 +2,17 @@ div.formExp {
     overflow: hidden;
 }
 
-section.formations, section.experiences {
+section.formations {
     margin-top: 3em;
+}
+section.experiences {
+    margin-top: 1.5em;
 }
 
 section.formations h3, section.experiences h3 {
     font-size: 1.25em;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
 }
 
 
